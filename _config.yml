@@ -1,0 +1,61 @@
+title: nodapCoder's blog
+logo: "images/logo.svg" # You can add own logo image. ?
+description: 알고리즘, 보안, 연구 및 개발하며 공부하는 것들의 기록
+baseurl: "" 
+url: "https://nodapCoder.github.io" # The base hostname & protocol for your site, e.g. http://example.com
+
+# Author Settings
+author:
+  name: nodapCoder
+  bio: 개노답코더라고 합니다. 보안, 연구에 관심이 많습니다.
+
+# Contact links
+email: th7283@gmail.com # Add your Email address
+
+# Hero Section
+hero: true # To enable the section hero, use the value true. To turn off use the value false.
+hero-title: nodapCoder's Blog # Add your hero title
+hero-subtitle: 알고리즘, 보안, 연구 및 개발하며 공부하는 것들의 기록
+hero-image: images/hero.JPG
+
+# Footer
+footer-image: images/footer.JPG # Add background image in footer
+
+# Comment Section (Disqus)
+disqus-identifier: nodapCoder # Add your shortname for Disqus Comment. For example mr-brown
+
+# Google Analytics
+google-analytics: "UA-155319524-1" # Add your identifier. For example UA-99631805-1.
+
+# Newsletter
+mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll/tagging
+
+paginate: 4
+paginate_path: "/page/:num"
+
+# Pages Path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
+
+include:
+  - _pages
+
+# Tags
+tag_page_dir:         tag
+tag_page_layout:      tag_page
+tag_permalink_style:  pretty
+
+sass:
+  sass_dir: _sass
+  style: compressed
